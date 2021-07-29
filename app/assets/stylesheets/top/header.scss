@@ -1,0 +1,35 @@
+.header {
+  height: 450px;
+  background-image: url("/banner_image1.jpeg");
+  background-size: cover;
+  background-position: center;
+  .header-contents {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+      height: 110px;
+      line-height: 110px;
+      width: 300px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+    &__right {
+      height: 110px;
+      line-height: 110px;
+      width: 130px;
+      text-align: center;
+      background-color: rgba($color: burlywood, $alpha: 0.9);
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 17px;
+        }
+    }
+  }
+}

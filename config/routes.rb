@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'login#index'
-  get 'login/index'
+  root 'top#index'
+  get 'top/index'
   devise_for :users
 end
