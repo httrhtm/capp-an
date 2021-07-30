@@ -1,5 +1,5 @@
 .account-main
-  -# = render "users/shared/error_messages"
+  = render "devise/shared/error_messages", resource: resource
   .change-form
     アカウントをお持ちでない方はこちら
     = link_to new_user_registration_path, class: "new-link" do
