@@ -1,35 +1,63 @@
-.header {
+.top-header {
   height: 450px;
   background-image: url("/banner_image1.jpeg");
   background-size: cover;
   background-position: center;
   .header-contents {
-    height: 110px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
     &__left {
-      height: 110px;
-      line-height: 110px;
+      height: 50px;
       width: 300px;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.5);
-      h1 {
+      .header_title {
         font-size: 25px;
-        font-weight: bold;
+        line-height: 50px
       }
     }
     &__right {
-      height: 110px;
-      line-height: 110px;
+      height: 50px;
+      line-height: 50px;
       width: 130px;
       text-align: center;
-      background-color: rgba($color: burlywood, $alpha: 0.9);
+      li {
+        list-style: none;
+        text-decoration: none;
         a {
           text-decoration: none;
-          color: white;
-          font-size: 17px;
+          color: black;
         }
+        &:hover ul.sub-list{
+          display: block;
+        }
+      }
+      ul.sub-list {
+        padding: 0;
+        z-index: 1;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        li.sub {
+          text-align: center;
+          width: 130px;
+          margin-left: 0;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          a:hover{
+            text-decoration: none;
+            color: black;
+          }
+          &:hover {
+            text-align: center;
+            width: 130px;
+            background-color: rgba($color: burlywood, $alpha: 0.5);
+          }
+        }
+      }
     }
   }
 }
