@@ -11,7 +11,7 @@
         = f.label :username, "ユーザーネーム", class: "label label__username"
         %span.form-require 必須
         %br
-        = f.text_field :username, class: "input username", autofocus: true, autocomplete: "username", placeholder: "例) でこぼ子"
+        = f.text_field :username, class: "input username", autofocus: true, autocomplete: "off", placeholder: "例) でこぼ子"
       .field
         = f.label :email, "メールアドレス", class: "label"
         %span.form-require 必須
@@ -21,11 +21,11 @@
         = f.label :password_confirmation, "パスワード", class: "label"
         %span.form-require 必須
         %br
-        = f.password_field :password, class: "input password", autocomplete: "new-password", placeholder: "7文字以上"
+        = f.password_field :password, class: "input password", autocomplete: "new-password", placeholder: "8文字以上"
       .field
         = f.label :password_confirmation, "パスワード(確認)", class: "label"
         %span.form-require 必須
         %br
-        = f.password_field :password_confirmation, class: "input password-confirmation", autocomplete: "new-password", placeholder: "7文字以上"
+        = f.password_field :password_confirmation, class: "input password-confirmation", autocomplete: "new-password", placeholder: "8文字以上"
       .actions
         = f.submit "登録", class:"input submit"
