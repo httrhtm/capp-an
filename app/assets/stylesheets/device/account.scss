@@ -1,15 +1,15 @@
-.sessions-main{
+.account-main{
   width: 650px;
   margin: 0 auto;
   text-align: center;
   background-color: white;
-  .registration-text {
-    padding: 60px 0;
+  .change-form {
+    padding: 40px 0;
     font-size: 13px;
     a {
       text-decoration: none;
     }
-    .registration-btn {
+    .move-btn {
       height: 50px;
       line-height: 50px;
       width: 350px;
@@ -20,10 +20,25 @@
       background-color: burlywood;
     }
   }
-  .session-form{
+  .input-form{
     border: 1px solid #CCCCCC;
     border-radius: 4px;
     font-size: 15px;
+    .label {
+      font-weight: bold;
+      font-size: 14px;
+      &__username {
+        margin-top: 30px;
+      }
+    }
+    .form-require {
+      margin: 0 0 0 8px;
+      padding: 2px 4px;
+      border-radius: 2px;
+      color: #fff;
+      font-size: 12px;
+      background: #ea352d;
+    }
     .input {
       height: 50px;
       width: 340px;
