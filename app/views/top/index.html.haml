@@ -5,14 +5,15 @@
         活版印刷案内所
     .header-contents__right
       - if user_signed_in?
-        %select
-          %option 
-            = current_user.username
-          %option{value= ""} マイページ
-          %option{value= ""} 
-            =link_to "ログアウト", destroy_user_session_path, method: :delete
+        %li
+          = current_user.username
+          %ul.sub-list
+            %li.sub
+              =link_to "マイページ"
+            %li.sub
+              =link_to "ログアウト", destroy_user_session_path, method: :delete
       - else
-        .menu
+        %li
           =link_to "ログイン", new_user_session_path, {class: "link"}
 
 .serch-contents
