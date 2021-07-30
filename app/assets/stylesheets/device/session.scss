@@ -1,0 +1,50 @@
+.sessions-main{
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  .registration-text {
+    padding: 60px 0;
+    font-size: 13px;
+    a {
+      text-decoration: none;
+    }
+    .registration-btn {
+      height: 50px;
+      line-height: 50px;
+      width: 350px;
+      margin: auto;
+      margin-top: 10px;
+      font-size: 15px;
+      color: white;
+      background-color: burlywood;
+    }
+  }
+  .session-form{
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-size: 15px;
+    .input {
+      height: 50px;
+      width: 340px;
+      margin: 15px 0;
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+      &__top {
+        margin-top: 30px;
+      }
+    }
+    .submit {
+      border: none;
+      color: white;
+      background-color: burlywood;
+    }
+    .password-forget {
+      margin-bottom: 15px;
+      a {
+        text-decoration: none;
+        color: #5D99FF;
+      }
+    }
+  }
+}
