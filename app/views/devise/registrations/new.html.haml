@@ -1,0 +1,31 @@
+.account-main
+  .change-form
+    アカウントをお持ちの方はこちら
+    = link_to new_user_session_path, class: "new-link" do
+      .move-btn
+        ログイン
+  .input-form
+    = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+      = render "devise/shared/error_messages", resource: resource
+      .field
+        = f.label :username, "ユーザーネーム", class: "label label__username"
+        %span.form-require 必須
+        %br
+        = f.text_field :username, class: "input username", autofocus: true, autocomplete: "off", placeholder: "例) でこぼ子"
+      .field
+        = f.label :email, "メールアドレス", class: "label"
+        %span.form-require 必須
+        %br
+        = f.email_field :email, class: "input email", autofocus: true, autocomplete: "email", placeholder: "PC・携帯どちらでも可"
+      .field
+        = f.label :password_confirmation, "パスワード", class: "label"
+        %span.form-require 必須
+        %br
+        = f.password_field :password, class: "input password", autocomplete: "new-password", placeholder: "8文字以上"
+      .field
+        = f.label :password_confirmation, "パスワード(確認)", class: "label"
+        %span.form-require 必須
+        %br
+        = f.password_field :password_confirmation, class: "input password-confirmation", autocomplete: "new-password", placeholder: "8文字以上"
+      .actions
+        = f.submit "登録", class:"input submit"
